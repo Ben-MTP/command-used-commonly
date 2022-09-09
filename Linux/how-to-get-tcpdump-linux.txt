@@ -1,0 +1,8 @@
+tcpdump -i any -s 65535 tcp port xxxx -w /tmp/trace.pcap
+
+Thay xxx= port cần check vào là đc
+
+Ví dụ:
+tcpdump -i any -s 65535 tcp -n -w /app/appgw/routing-server/billing.pcap
+
+tcpdump -i any -s 65535 tcp port 8080 -n -w /app/appgw/routing-server/billing.pcap

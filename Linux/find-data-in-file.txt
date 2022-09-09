@@ -1,0 +1,9 @@
+# tim kiem noi dung trong file
+find /app/appgw/webadmin/ -name '*.html' -exec grep "crud_message_dichvu" {} \;
+ 
+# lay file name
+find /app/appgw/webadmin/ -name '*.html' -exec grep -l "crud_message_dichvu" {} \;
+
+
+
+crud_message_dichvu = begin ?:=vas_platform.CRUD_MESSAGE_CONFIG.list_servicename_old();commit; end;

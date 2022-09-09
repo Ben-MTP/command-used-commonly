@@ -1,0 +1,6 @@
+netstat -anp |grep LISTEN 	--> check porrt LISTEN
+netstat -ltnp | grep 9011
+netstat -anp |grep 9001		--> check với một port chỉ định
+ps -ef |grep 12428			--> sau khi có port --> kiểm tra được PID nào đang chạy --> từ đó có thể kill được PID
+
+Trường hợp mã có port nhưng không check ra với PID với userappgw thì có thể nó đang chạy bằng account root nhé.

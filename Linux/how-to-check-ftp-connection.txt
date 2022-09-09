@@ -1,0 +1,18 @@
+# FTP Connection
+
+## List account FTP:
+smovies/smovies@123
+Mgame/Mgame@123
+KENH1/KeNh231@@
+
+
+## How to check state Connection:
+
+Step 1: ftp <from_server>
+Step 2: enter user/pass FTP
+Step 3: passive
+	on/off
+Step 4: ls
+	check directory
+	
+

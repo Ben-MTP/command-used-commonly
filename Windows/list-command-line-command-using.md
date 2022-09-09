@@ -23,3 +23,8 @@ netsh wlan show interfaces		: thông tin về mạng wifi đang sử dụng
 netstat -a						: chỉ ra các connection hiện tại và protocol, source, destination address
 netstat -b  					: chỉ ra executable involved trong mỗi connection or listening port
 netstat /?						: chỉ ra tất cả các option với dòng lệnh tương ứng.
+
+ping ip 						: kiểm tra tín hiệu từ host A đến host B
+telnet ip port 					: check connection với ip và port (có thể dùng để check kết nối data, job...)
+								: Ctrl + ] -> thoát khỏi cửa sổ của telnet
+								: quit -> để thoát khỏi chế độ của Telnet

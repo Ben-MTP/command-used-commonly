@@ -1,0 +1,19 @@
+find /var/ocsconfig_share/SCR/export/home -type f -size +0c | grep $(date +%Y%m%d -d -0day) | grep voucher_act
+
+
+
+find /var/ocsconfig_share/SCR/export/home -type f -size +0c | grep $(date +%Y%m%d -d -0day) | grep voucher_act | wc -l
+
+proxy ocs:
+socks4
+10.252.10.246 : 1081
+
+proxy vas:
+socks4
+10.252.10.249 : 1080
+
+
+
+how to configure proxy firewall in securecrt linux
+
+Global Option -> Category -> Firewall

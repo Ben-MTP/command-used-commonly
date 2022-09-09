@@ -1,0 +1,28 @@
+cd /app/apache-archiva-2.2.5/
+
+cat archiva.xml
+
+netstat -anp
+
+cat /etc/passwd
+
+su - git
+
+reboot
+
+ls -arlt
+
+mount -t cifs  -osec=ntlmv2,domain=tnas.neo.vn,username=admin,password=Kamejoko@123,uid=987,gid=981,forceuid,forcegid,noserverino //10.252.12.249/public/gitlab //home/git/repositories/git-data/repositories
+
+umount /home/git/repositories/git-data/repositories
+
+netstat -ltnp
+
+rpcinfo -p
+
+netstat -ltnp
+
+
+lsof -i :1995
+
+ss --kill state listening src :1995
