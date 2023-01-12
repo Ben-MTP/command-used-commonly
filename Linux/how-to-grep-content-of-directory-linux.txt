@@ -1,0 +1,8 @@
+In Linux, I normally use this command to recursively grep for a particular text within a directory:
+
+grep -rni "string" *
+where
+
+r = recursive i.e, search subdirectories within the current directory
+n = to print the line numbers to stdout
+i = case insensitive search

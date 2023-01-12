@@ -28,3 +28,15 @@ ping ip 						: kiểm tra tín hiệu từ host A đến host B
 telnet ip port 					: check connection với ip và port (có thể dùng để check kết nối data, job...)
 								: Ctrl + ] -> thoát khỏi cửa sổ của telnet
 								: quit -> để thoát khỏi chế độ của Telnet
+								
+## Kiểm tra các port đang sử dụng trên máy:
+netstat -ona					: Liệt kê toàn bộ các processID + port đang sử dụng
+netstat -one | findstr 3006		: Liệt kê process sử dụng với port 3006
+								: Trong đó findstr là từ khóa dùng để grep dữ liệu
+								: | sử dụng để pipline dữ liệu
+
+## Kiểm tra các task đang chạy:
+tasklist /v | findstr cmd		: liệt kê các task đang chạy
+taskkill /F /PID 6020			: dùng để kill task đang chạy trên server
+								: /F -> force
+
